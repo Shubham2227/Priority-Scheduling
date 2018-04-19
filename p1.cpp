@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 struct process
 {
@@ -39,6 +40,13 @@ char c;
  sum_bt+=p[i].bt;
  
 }
+void findTurnAroundTime(int processes[], int n,int bt[], int wt[], int tat[])
+{
+    
+    for (i= 0; i < n ; i++)
+        tat[i] = bt[i] + wt[i];
+}
+ 
 sortByArrival();
 p[9].priority=-9999;
 printf("\nName\tArrival Time\tBurst Time\tPriority\t WT \t TT \t NTT");
